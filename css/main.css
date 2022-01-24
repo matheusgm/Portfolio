@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeSection{
+    background-color: aqua;
+    position: relative;
+    z-index: 1;
+}
+
+#homeSection::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+.cards{
+    flex-direction: row;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 20px solid azure;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-item > div:first-child{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px ;
+    width: 100%;
+    padding: 20px;
+ 
+}
+
+.card-item > div:last-child{
+    flex-basis: 50%;
+    margin-top: 10px;
+    background-color: azure;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-title{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-author{
+    font-size: 14pt;
+    font-style: italic;
+    text-align: left;
+}
+
+.card-description{
+    font-size: 12pt;
+    text-align: justify;
+}
+
+
+
+#projectSection{
+    background-color: brown;
+}
+
+#projectSection > .container{
+    flex-direction: column;
+    text-align: center;
+}
+
+footer{
+    background-color: chartreuse;
+    min-height: 30vh;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    
+}
+
+.footer-item{
+    background-color: burlywood;
+    display: flex;
+    min-width: 30%;
+    height: 100px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .footer-item {
+        min-width: 100%;
+    }
+  }
+
+.footer-title{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: start;
+}
