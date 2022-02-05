@@ -15,16 +15,100 @@ html{
     font-family: 'Times New Roman', Times, serif;
 }
 
+body{
+    background: linear-gradient(0deg, rgba(87,247,255,1) 0%, rgba(6,127,203,1) 100%);
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 30px;
     justify-content: center;
 }
 
+
+
+.home-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+@keyframes showText {
+    from{
+        color: transparent;
+    }
+    to{
+        color: #fff;
+    }
+  }
+
+.home-title > p{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18pt;
+    color: transparent;
+    animation-name: showText;
+    animation-duration: .5s; 
+    animation-timing-function: ease;
+    animation-fill-mode:  forwards;
+    animation-delay: 1.4s; 
+}
+
+@keyframes showBox {
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+  }
+
+.home-title > p > span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    animation-name: showBox;
+    animation-duration: 1s; 
+    animation-timing-function: ease;
+    animation-delay: 1s; 
+}
+
+.home-title > p:last-child > span{
+
+    animation-delay: 1.6s; 
+}
+
+.home-title > p:last-child{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14pt;
+    animation-delay: 2s;
+}
+
+.home-title > img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: solid 2px white;
+  background-color: transparent;
+  object-fit: cover;
+
+}
+
+
 #homeSection{
-    background-color: aqua;
+    /* background: linear-gradient(0deg, rgba(87,247,255,1) 0%, rgba(84,91,251,1) 100%); */
     position: relative;
     z-index: 1;
 }
@@ -36,8 +120,8 @@ html{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .5;
+    /* background-color: black; */
+    opacity: .4;
     z-index: -1;
 }
 
@@ -107,7 +191,7 @@ html{
 
 
 #projectSection{
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 #projectSection > .container{
@@ -116,7 +200,7 @@ html{
 }
 
 footer{
-    background-color: chartreuse;
+    /* background-color: rgb(182, 182, 182); */
     min-height: 30vh;
     width: 100%;
     padding-left: 10%;
@@ -136,19 +220,20 @@ footer{
 }
 
 .footer-item{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     display: flex;
     flex-direction: column;
     width: 30%;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     
 }
 
 @media only screen and (max-width: 700px) {
     .footer-item {
         min-width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
   }
 
