@@ -1,0 +1,10 @@
+
+
+#projectSection{
+    background-color: transparent;
+}
+
+#projectSection > .container{
+    flex-direction: column;
+    text-align: center;
+}

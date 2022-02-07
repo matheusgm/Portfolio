@@ -1,0 +1,112 @@
+
+.game-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 40vh;
+    padding: 2%;
+    
+
+}
+
+.card-top > div:first-child{
+    /* background-color: aqua; */
+    width: 49%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    margin-right: 1%;
+    min-height: 40vh;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    
+}
+
+.card-top > div:last-child{
+    /* background-color: yellow; */
+    width: 49%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    margin-left: 1%;
+    min-height: 40vh;
+}
+
+.card-bottom{
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    width: 100%;
+    padding: 10px;
+
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.card-img{
+    /* background-color: purple; */
+    min-width: 200px;
+    min-height: 200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+    border: 5px solid #fff;
+    border-radius: 5px;
+    
+}
+
+.card-img:first-child{
+    margin-left: 0;
+}
+
+.card-img:last-child{
+    margin-right: 0;
+}
+
+.card-title{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-author{
+    font-size: 14pt;
+    font-style: italic;
+    text-align: left;
+}
+
+.card-description{
+    font-size: 12pt;
+    text-align: justify;
+}
