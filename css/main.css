@@ -44,52 +44,36 @@ hr{
 footer{
     /* background-color: rgb(182, 182, 182); */
     min-height: 30vh;
+    height: 100%;
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: row;
-    position: relative;
     z-index: 1;
     overflow: hidden;
     flex-wrap: wrap;
+
 
     
 }
 
 .footer-item{
+    position: relative;
     /* background-color: burlywood; */
     display: flex;
     flex-direction: column;
     width: 30%;
-    
+    min-height: 300px;
     
 }
 
-@media only screen and (max-width: 700px) {
-    .footer-item {
-        min-width: 100%;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 
-    .card-top > div:first-child{
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 1%;
-    }
-
-    .card-top > div:last-child{
-        width: 100%;
-        margin-left: 0;
-        margin-top: 1%;
-    }
-  }
 
 .footer-title{
     font-size: 20pt;
@@ -101,6 +85,29 @@ footer{
 .footer-item-content{
     margin: 10px;
 }
+
+.vertical-divider{
+    width: 2px;
+    background-color: rgb(170, 170, 170);
+    min-height: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-item {
+        min-width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 0;
+    }
+
+    .vertical-divider{
+        width: 80%;
+        height: 2px;
+        min-height: 2px;
+    }
+
+  }
 
 
 
